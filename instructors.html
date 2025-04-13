@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructors - LearnScape</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-menu">
+        <a href="index.html" class="logo">LearnScape</a>
+        <nav class="main-nav">
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="topics.html" class="nav-link">Topics</a>
+          <a href="instructors.html" class="nav-link active">Instructors</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <div class="search-bar">
+          <i class="icon search-icon">&#128269;</i>
+          <input type="search" placeholder="Search instructors...">
+        </div>
+        <button class="icon-button">
+          <i class="icon bell-icon">&#128276;</i>
+        </button>
+        <button class="user-button">
+          <i class="icon user-icon">👤</i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header-content">
+          <div>
+            <h1 class="page-title">Our Instructors</h1>
+            <p class="page-description">Learn from industry experts with real-world experience in their fields</p>
+          </div>
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="icon search-icon">&#128269;</i>
+              <input type="search" placeholder="Search instructors..." class="search-input">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructors-section">
+      <div class="container">
+        <div class="instructors-categories">
+          <button class="category-btn active">All Instructors</button>
+          <button class="category-btn">Web Development</button>
+          <button class="category-btn">Data Science</button>
+          <button class="category-btn">Mobile Development</button>
+          <button class="category-btn">Design</button>
+        </div>
+
+        <div class="instructors-grid">
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Sarah Johnson</h3>
+              <p class="instructor-title">Senior Web Developer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 / 5</span>
+              </div>
+              <p class="instructor-bio">10+ years experience building scalable web applications and teaching developers. Specializes in JavaScript, React, and Node.js. Previously worked at Facebook and Airbnb.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">8</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">24,500</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Michael Chen</h3>
+              <p class="instructor-title">Data Scientist</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 / 5</span>
+              </div>
+              <p class="instructor-bio">Former Google data scientist with PhD in Machine Learning from Stanford. Expert in Python, TensorFlow, and big data analytics. Author of 'Practical Machine Learning' published by O'Reilly.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">6</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">18,300</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Emily Rodriguez</h3>
+              <p class="instructor-title">UX/UI Designer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 / 5</span>
+              </div>
+              <p class="instructor-bio">Award-winning designer with experience at Apple and Airbnb. Specializes in user research, interaction design, and design systems. Regular speaker at UX conferences worldwide.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">5</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">15,800</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="James Wilson" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">James Wilson</h3>
+              <p class="instructor-title">Mobile Developer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-text">4.7 / 5</span>
+              </div>
+              <p class="instructor-bio">iOS and Android expert with over 20 apps published on both platforms. Previously lead developer at Twitter's mobile division. Specializes in React Native and Swift.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">7</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">19,200</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sophia Kim" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Sophia Kim</h3>
+              <p class="instructor-title">Product Manager</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 / 5</span>
+              </div>
+              <p class="instructor-bio">Experienced product manager who has launched products at Amazon and Netflix. Expert in agile methodologies, user stories, and product roadmaps.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">4</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">12,600</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Martinez" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">David Martinez</h3>
+              <p class="instructor-title">DevOps Engineer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 / 5</span>
+              </div>
+              <p class="instructor-bio">AWS certified Solutions Architect with expertise in Docker, Kubernetes, and CI/CD pipelines. Currently leading DevOps at a Fortune 500 company.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">5</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">14,300</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Olivia Taylor" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Olivia Taylor</h3>
+              <p class="instructor-title">Cybersecurity Expert</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 / 5</span>
+              </div>
+              <p class="instructor-bio">Former NSA security analyst with expertise in ethical hacking, penetration testing, and network security. Author of 'Cybersecurity Fundamentals'.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">6</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">16,700</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="Robert Lee" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Robert Lee</h3>
+              <p class="instructor-title">Blockchain Developer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-text">4.7 / 5</span>
+              </div>
+              <p class="instructor-bio">Blockchain expert specializing in Ethereum, Solidity, and smart contracts. Founder of two successful blockchain startups and frequent speaker at Web3 conferences.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">4</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">11,200</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-logo">LearnScape</h3>
+          <p class="footer-description">Expand your knowledge and skills with our diverse range of courses taught by expert instructors.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Subscribe</h4>
+          <p class="footer-text">Stay updated with our latest courses and offers.</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email" class="subscribe-input">
+            <button class="subscribe-button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 LearnScape. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">TW</a>
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

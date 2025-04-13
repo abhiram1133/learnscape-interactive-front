@@ -1,26 +1,454 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>learnscape-interactive-front</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnScape - Learn with Expert-Led Online Courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.312.0/dist/umd/lucide.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-menu">
+        <a href="index.html" class="logo">LearnScape</a>
+        <nav class="main-nav">
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="topics.html" class="nav-link">Topics</a>
+          <a href="instructors.html" class="nav-link">Instructors</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <div class="search-bar">
+          <i class="icon search-icon">&#128269;</i>
+          <input type="search" placeholder="Search courses...">
+        </div>
+        <button class="icon-button">
+          <i class="icon bell-icon">&#128276;</i>
+        </button>
+        <button class="user-button">
+          <i class="icon user-icon">👤</i>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <meta property="og:title" content="learnscape-interactive-front" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Unlock Your Potential with Expert-Led Online Courses</h1>
+          <p class="hero-subtitle">Gain new skills, advance your career, and learn from industry experts with our interactive learning platform.</p>
+          <div class="hero-buttons">
+            <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+            <a href="dashboard.html" class="btn btn-outline">My Dashboard</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="Students learning online">
+        </div>
+      </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">📚</div>
+            <div class="stat-value">350+</div>
+            <div class="stat-label">Online Courses</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-value">50k+</div>
+            <div class="stat-label">Active Students</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-value">120+</div>
+            <div class="stat-label">Expert Instructors</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-value">99%</div>
+            <div class="stat-label">Success Rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Featured Courses Section -->
+    <section class="featured-courses">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Featured Courses</h2>
+            <p class="section-subtitle">Explore our handpicked selection of top-rated courses</p>
+          </div>
+          <a href="courses.html" class="view-all">View All Courses →</a>
+        </div>
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3" alt="Web Development Fundamentals">
+              <div class="course-badge">Featured</div>
+            </div>
+            <div class="course-content">
+              <div class="course-tags">
+                <span class="course-tag">Web Development</span>
+              </div>
+              <h3 class="course-title">Web Development Fundamentals</h3>
+              <p class="course-description">Learn HTML, CSS, and JavaScript fundamentals from scratch and build your first responsive website.</p>
+              <div class="course-meta">
+                <div class="course-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-value">4.9</span>
+                </div>
+                <div class="course-students">12,345 students</div>
+              </div>
+              <div class="course-footer">
+                <div class="course-instructor">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="instructor-avatar">
+                  <span class="instructor-name">Sarah Johnson</span>
+                </div>
+                <div class="course-price">$59.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3" alt="Data Science Bootcamp">
+              <div class="course-badge">Featured</div>
+            </div>
+            <div class="course-content">
+              <div class="course-tags">
+                <span class="course-tag">Data Science</span>
+              </div>
+              <h3 class="course-title">Data Science Bootcamp</h3>
+              <p class="course-description">Master the essential skills of data analysis, visualization, and machine learning with Python.</p>
+              <div class="course-meta">
+                <div class="course-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-value">4.8</span>
+                </div>
+                <div class="course-students">10,892 students</div>
+              </div>
+              <div class="course-footer">
+                <div class="course-instructor">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="instructor-avatar">
+                  <span class="instructor-name">Michael Chen</span>
+                </div>
+                <div class="course-price">$79.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3" alt="Mobile App Development">
+              <div class="course-badge">Featured</div>
+            </div>
+            <div class="course-content">
+              <div class="course-tags">
+                <span class="course-tag">Mobile Development</span>
+              </div>
+              <h3 class="course-title">Mobile App Development</h3>
+              <p class="course-description">Build cross-platform mobile applications using React Native for iOS and Android.</p>
+              <div class="course-meta">
+                <div class="course-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="rating-value">4.7</span>
+                </div>
+                <div class="course-students">8,721 students</div>
+              </div>
+              <div class="course-footer">
+                <div class="course-instructor">
+                  <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="James Wilson" class="instructor-avatar">
+                  <span class="instructor-name">James Wilson</span>
+                </div>
+                <div class="course-price">$69.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="topics">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">Browse Topics</h2>
+          <p class="section-subtitle">Explore our diverse range of topics and find the perfect course to help you achieve your goals</p>
+        </div>
+        <div class="topics-grid">
+          <a href="topics.html" class="topic-card">
+            <div class="topic-image">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3" alt="Web Development">
+              <div class="topic-overlay">
+                <h3>Web Development</h3>
+                <p>24 courses</p>
+              </div>
+            </div>
+            <div class="topic-content">
+              <div class="topic-meta">
+                <span>👥 2,016 students enrolled</span>
+              </div>
+              <div class="topic-tags">
+                <span class="topic-tag">HTML/CSS</span>
+                <span class="topic-tag">JavaScript</span>
+                <span class="topic-tag">React</span>
+              </div>
+              <div class="topic-stats">
+                <span>📚 24 courses</span>
+                <span>⏱️ 240+ hours</span>
+              </div>
+            </div>
+          </a>
+          <a href="topics.html" class="topic-card">
+            <div class="topic-image">
+              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3" alt="Data Science">
+              <div class="topic-overlay">
+                <h3>Data Science</h3>
+                <p>18 courses</p>
+              </div>
+            </div>
+            <div class="topic-content">
+              <div class="topic-meta">
+                <span>👥 1,512 students enrolled</span>
+              </div>
+              <div class="topic-tags">
+                <span class="topic-tag">Python</span>
+                <span class="topic-tag">R</span>
+                <span class="topic-tag">SQL</span>
+              </div>
+              <div class="topic-stats">
+                <span>📚 18 courses</span>
+                <span>⏱️ 180+ hours</span>
+              </div>
+            </div>
+          </a>
+          <a href="topics.html" class="topic-card">
+            <div class="topic-image">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3" alt="Mobile Development">
+              <div class="topic-overlay">
+                <h3>Mobile Development</h3>
+                <p>16 courses</p>
+              </div>
+            </div>
+            <div class="topic-content">
+              <div class="topic-meta">
+                <span>👥 1,344 students enrolled</span>
+              </div>
+              <div class="topic-tags">
+                <span class="topic-tag">iOS</span>
+                <span class="topic-tag">Android</span>
+                <span class="topic-tag">React Native</span>
+              </div>
+              <div class="topic-stats">
+                <span>📚 16 courses</span>
+                <span>⏱️ 160+ hours</span>
+              </div>
+            </div>
+          </a>
+          <a href="topics.html" class="topic-card">
+            <div class="topic-image">
+              <img src="https://images.unsplash.com/photo-1583339793403-3d3110811d45?ixlib=rb-4.0.3" alt="UX/UI Design">
+              <div class="topic-overlay">
+                <h3>UX/UI Design</h3>
+                <p>14 courses</p>
+              </div>
+            </div>
+            <div class="topic-content">
+              <div class="topic-meta">
+                <span>👥 1,176 students enrolled</span>
+              </div>
+              <div class="topic-tags">
+                <span class="topic-tag">Figma</span>
+                <span class="topic-tag">Adobe XD</span>
+                <span class="topic-tag">Prototyping</span>
+              </div>
+              <div class="topic-stats">
+                <span>📚 14 courses</span>
+                <span>⏱️ 140+ hours</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="section-footer center">
+          <a href="topics.html" class="btn btn-outline">Browse All Topics →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Meet Our Instructors</h2>
+            <p class="section-subtitle">Learn from industry experts with real-world experience</p>
+          </div>
+          <a href="instructors.html" class="view-all">View All Instructors →</a>
+        </div>
+        <div class="instructors-grid">
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Sarah Johnson</h3>
+              <p class="instructor-title">Senior Web Developer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 / 5</span>
+              </div>
+              <p class="instructor-bio">10+ years experience building scalable web applications and teaching developers.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">8</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">24,500</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Michael Chen</h3>
+              <p class="instructor-title">Data Scientist</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 / 5</span>
+              </div>
+              <p class="instructor-bio">Former Google data scientist with PhD in Machine Learning from Stanford.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">6</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">18,300</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">Emily Rodriguez</h3>
+              <p class="instructor-title">UX/UI Designer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 / 5</span>
+              </div>
+              <p class="instructor-bio">Award-winning designer with experience at Apple and Airbnb.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">5</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">15,800</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="instructor-card">
+            <div class="instructor-header">
+              <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="James Wilson" class="instructor-avatar">
+            </div>
+            <div class="instructor-content">
+              <h3 class="instructor-name">James Wilson</h3>
+              <p class="instructor-title">Mobile Developer</p>
+              <div class="instructor-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-text">4.7 / 5</span>
+              </div>
+              <p class="instructor-bio">iOS and Android expert with over 20 apps published on both platforms.</p>
+              <div class="instructor-stats">
+                <div class="stat">
+                  <div class="stat-value">7</div>
+                  <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">19,200</div>
+                  <div class="stat-label">Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2 class="cta-title">Ready to Start Learning?</h2>
+        <p class="cta-subtitle">Join thousands of students already learning on LearnScape and take the next step in your career journey.</p>
+        <a href="courses.html" class="btn btn-light">Browse All Courses</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-logo">LearnScape</h3>
+          <p class="footer-description">Expand your knowledge and skills with our diverse range of courses taught by expert instructors.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Subscribe</h4>
+          <p class="footer-text">Stay updated with our latest courses and offers.</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email" class="subscribe-input">
+            <button class="subscribe-button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 LearnScape. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">TW</a>
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
